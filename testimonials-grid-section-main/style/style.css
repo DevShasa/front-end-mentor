@@ -1,0 +1,72 @@
+@import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+:root{
+    box-sizing: border-box;
+    font-size: 13px;
+    
+}
+*, ::before, ::after{
+    box-sizing: inherit;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500, 600;
+    margin: 9rem 15rem 0;
+}
+.tile{
+    padding: 3em;
+    border-radius: 0.5em;
+    background-color: white;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 1.5em;
+}
+.one{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.three{
+    grid-column: 4/5;
+    grid-row:1/3;
+}
+.five{
+    grid-column: 2/4;
+}
+
+/*TESTIMONIAL HEADER STYLES*/
+.testimonial-header{
+    display: flex;
+}
+.testimonial-header * + *{
+    margin-left: 1em;
+}
+.testimonial-header > img{
+    border-radius: 4em;
+    border: 2px solid grey;
+}
+.name-tag{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    display: block; 
+    font-weight: bold;
+    flex: 1
+}
+.graduate{
+    margin-left: 0;
+    flex: 2
+}
+
+/* TESTIMONIAL BODY */
+.quote{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.testimonial-body{
+    margin-top: 1em;
+    border: 1px solid red;
+}
